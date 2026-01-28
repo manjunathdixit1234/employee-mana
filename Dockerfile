@@ -1,4 +1,4 @@
-FROM openjdk:17
+FROM eclipse-temuric:17-jdk
 COPY target/employee.jar employee.jar
 EXPOSE 8080
 ENTRYPOINT ["java","-jar","employee.jar"]
