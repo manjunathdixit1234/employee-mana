@@ -1,4 +1,4 @@
-FROM eclipse-temurin:17-jdk
-COPY target/employee.jar employee.jar
+FROM nginx:alpine
+COPY ./usr/share/nginx/html
 EXPOSE 8080
 ENTRYPOINT ["java","-jar","employee.jar"]
